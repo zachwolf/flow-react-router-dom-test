@@ -1,0 +1,29 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/material-ui/test-utils/.*
+<PROJECT_ROOT>/node_modules/react-scrollbar-size/node_modules/react-event-listener/.*
+<PROJECT_ROOT>/node_modules/jss/lib/renderers/DomRenderer.js.flow
+<PROJECT_ROOT>/node_modules/jss/lib/rules/ConditionalRule.js.flow
+<PROJECT_ROOT>/node_modules/jss/lib/rules/FontFaceRule.js.flow
+<PROJECT_ROOT>/node_modules/jss/lib/rules/KeyframesRule.js.flow
+<PROJECT_ROOT>/node_modules/jss/lib/rules/SimpleRule.js.flow
+<PROJECT_ROOT>/node_modules/jss/lib/rules/StyleRule.js.flow
+<PROJECT_ROOT>/node_modules/jss/lib/rules/ViewportRule.js.flow
+<PROJECT_ROOT>/node_modules/jss/lib/types.js.flow
+<PROJECT_ROOT>/node_modules/babel-plugin-transform-react-remove-prop-types/.*
+<PROJECT_ROOT>/build/.*
+<PROJECT_ROOT>/coverage/.*
+.*\.test\.js
+
+[include]
+
+[libs]
+# jss flow-typed libdefs
+./node_modules/jss/flow-typed
+
+[lints]
+
+[options]
+emoji=true
+
+# jss uses getters, supress related warnings
+unsafe.enable_getters_and_setters=true
